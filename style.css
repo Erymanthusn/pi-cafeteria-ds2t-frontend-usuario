@@ -1,0 +1,137 @@
+body{
+    margin:0;
+    background:#000;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:100vh;
+}
+
+.container{
+    position:relative;
+    width:800px;
+    height:600px;
+}
+
+.pistaDiscoteca{
+    position:absolute;
+    inset:0;
+    display:grid;
+    grid-template-columns:repeat(7, 1fr);
+    gap:5px;
+    place-items: center;
+}
+.logo{
+    position: absolute;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;
+    width: 250px;
+    border: 5px solid red ;
+    border-radius: 30px;
+    box-shadow: 0px 0px 20px 5px red;
+}
+.catalogo{
+    position: absolute;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;
+    width: 250px;
+    border: 5px solid red ;
+    border-radius: 30px;
+    box-shadow: 0px 0px 20px 5px red;
+}
+.botaoCatalogo{
+    background-color: #000;
+    color: white;
+}
+.homemAmarelo{
+    position: absolute;
+    height: 280px;
+    left: 100px;
+}
+.homemRosa{
+    position: absolute;
+    height: 300px;
+    right:10%;
+}
+.bolaDiscoteca{
+    position: absolute;
+    height: 300px;
+    top:-20px;
+}
+.fundo-logo{
+    position: absolute;
+    inset: 0;
+
+    display: grid;
+    place-items: center;
+}
+.frequency{
+    color:white;
+    text-shadow: rgb(184, 181, 181) 3px 3px 4px;
+}
+.luz{
+    width:55px;
+    height:55px;
+    border-radius:50%;
+    animation:pulse 2s infinite alternate;
+}
+
+.luz2{
+    width:55px;
+    height:55px;
+    border-radius:50%;
+    animation:pulse 2.50s infinite alternate;
+}
+
+.azul{
+    background:#00aaff;
+    box-shadow:
+    0 0 10px #00aaff,
+    0 0 25px #00aaff,
+    0 0 50px #00aaff;
+}
+
+.ciano{
+    background:#7ffcff;
+    box-shadow:
+    0 0 10px #7ffcff,
+    0 0 25px #7ffcff,
+    0 0 50px #7ffcff;
+}
+
+.amarelo{
+    background:#ffee00;
+    box-shadow:
+    0 0 10px #ffee00,
+    0 0 25px #ffee00,
+    0 0 50px #ffee00;
+}
+
+.vermelho{
+    background: red;
+    box-shadow:
+    0 0 15px red,
+    0 0 30px red,
+    0 0 60px red;
+}
+@keyframes pulse{
+    0%{
+        opacity:.3;
+        transform:scale(.8);
+        filter:blur(2px);
+    }
+
+    50%{
+        opacity:1;
+        transform:scale(1.1);
+        filter:blur(0);
+    }
+
+    100%{
+        opacity:.5;
+        transform:scale(.9);
+        filter:blur(1px);
+    }
+}
